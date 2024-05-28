@@ -1,0 +1,290 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-height: 1000px;
+    overflow: hidden;
+
+    @media only screen and (max-height: 450px) {
+        overflow: scroll;
+    }
+}
+
+.navigation {
+    height: 80px;
+    width: calc(100% - 400px);
+    padding: 12px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1100px) {
+        width: calc(100% - 120px);
+        padding: 12px 60px;
+    }
+}
+
+.menu_bar {
+    height: 35px;
+    display: block;
+
+    @media only screen and (min-width: 800px) {
+        display: none;
+    }
+}
+
+
+
+.menu {
+    width: 560px;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1100px) {
+        width: 400px;
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+.logo {
+    height: 80px;
+}
+
+.product {
+    height: 500px;
+    width: 45%;
+    padding-left: 40px;
+
+    @media only screen and (max-width: 800px) {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    @media only screen and (max-height: 700px) {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 0;
+
+    }
+}
+
+.text {
+    @media only screen and (max-width: 800px) {
+        margin: 0 60px;
+
+    }
+}
+
+.productImage {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media {
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    width: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: 1000px) {
+        margin-right: 20px;
+    }
+
+}
+
+.contact {
+    height: 20px;
+}
+
+.contactButton {
+    margin: 10px;
+    border-radius: 60px;
+    height: 55px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: 1s ease;
+}
+
+.contactButton:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.presentationCoffe {
+    height: 550px;
+
+    @media only screen and (max-width: 1000px) {
+        height: 400px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        display: none;
+    }
+
+    @media only screen and (max-height: 430px) {
+        height: 300px;
+    }
+}
+
+.about {
+    width: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+    }
+}
+
+
+.nameProduct {
+    color: #017143;
+    ;
+}
+
+.menu_link {
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 250ms, opacity 400ms;
+    padding: 10px 0;
+}
+
+.menu_link:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.allProducts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 8px;
+    left: 50%;
+    right: 50%
+}
+
+.coffee {
+    height: 80px;
+    padding: 20px;
+    transition: transform 250ms, opacity 400ms;
+
+    @media only screen and (max-height: 560px) {
+        display: none;
+    }
+
+    @media only screen and (max-width:600px) {
+        display: none;
+    }
+}
+
+.coffee:hover {
+    transform: translateY(-10px) scale(1.2);
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.button {
+    border-radius: 70px;
+    width: 135px;
+    height: 45px;
+    background-color: #017143;
+    color: white;
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.2s ease;
+    margin-top: 10px;
+
+
+    @media only screen and (max-width: 350px) {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+
+.button:hover {
+    background-color: black;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: -60vw;
+    bottom: -12vh;
+    border-radius: calc(100vw + 100vh);
+    background-color: #017143;
+    z-index: -2;
+
+    @media only screen and (max-width: 800px) {
+        display: none;
+    }
+
+    @media only screen and (max-height: 450px) {
+        bottom: -18vh;
+    }
+}
+
+.starbucks {
+    color: #017143;
+    font-size: 80px;
+    font-family: ui-serif;
+
+    @media only screen and (max-width: 800px) {
+        font-size: 50px;
+    }
+
+    @media only screen and (max-width: 350px) {
+        font-size: 40px;
+    }
+
+}
