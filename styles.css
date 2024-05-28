@@ -42,8 +42,6 @@ body {
     }
 }
 
-
-
 .menu {
     width: 560px;
     padding: 0px 80px;
@@ -274,7 +272,7 @@ body {
     }
 }
 
-.starbucks {
+.coffe_text {
     color: #017143;
     font-size: 80px;
     font-family: ui-serif;
